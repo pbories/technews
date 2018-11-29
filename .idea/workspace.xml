@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d19fed0-88de-4607-bc1a-cea71d57104d" name="Default Changelist" comment="" />
+    <list default="true" id="6d19fed0-88de-4607-bc1a-cea71d57104d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
           <entry key="env" value="16" />
           <entry key="php" value="2041" />
           <entry key="twig" value="1639" />
+          <entry key="txt" value="22" />
           <entry key="yaml" value="740" />
         </counts>
       </usages-collector>
@@ -51,6 +55,7 @@
         <counts>
           <entry key=".env file" value="16" />
           <entry key="PHP" value="2041" />
+          <entry key="PLAIN_TEXT" value="22" />
           <entry key="Twig" value="1639" />
           <entry key="YAML" value="740" />
         </counts>
@@ -166,6 +171,14 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Pascal &lt;superparisian@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -274,6 +287,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -389,12 +403,20 @@
       <workItem from="1543399506856" duration="1942000" />
       <workItem from="1543401518172" duration="5731000" />
       <workItem from="1543410674548" duration="11041000" />
-      <workItem from="1543481441318" duration="20377000" />
+      <workItem from="1543481441318" duration="20493000" />
     </task>
+    <task id="LOCAL-00001" summary="premier commit">
+      <created>1543508147900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543508147900</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39091000" />
+    <option name="totallyTimeSpent" value="39207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -426,6 +448,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="premier commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="premier commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/front/categorie.html.twig">
