@@ -1,0 +1,25 @@
+<div>
+    <article class="spotlight-item">
+        <div class="spotlight-img">
+            <img alt="{{ article.titre }}" src="{{ asset('images/product/') ~article.featuredimage }}" class="img-responsive" />
+            <a href="#" class="cate-tag">{{ article.categorie.libelle }}</a>
+        </div>
+        <div class="spotlight-item-caption">
+            <h2 class="font-heading">
+                <a href="article.html">
+                    {{ article.titre }}
+                </a>
+            </h2>
+            <div class="meta-post">
+                <a href="#">
+                    {{ article.auteur.prenom ~ ' ' ~ article.auteur.nom }}
+                </a>
+                <em></em>
+                <span>
+                   {{ article.datecreation | date('d/m/Y') }}
+               </span>
+            </div>
+            {{ article.contenu | slice(0, 250) }}... <a href="article.html">Lire la suite</a>
+        </div>
+    </article>
+</div>

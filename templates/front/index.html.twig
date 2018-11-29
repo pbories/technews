@@ -1,0 +1,40 @@
+{% extends "layout.html.twig" %}
+
+{% block page_title %}
+    Accueil
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="row">
+    <!--colleft-->
+    <div class="col-md-8 col-sm-12">
+        <div class="box-caption">
+            <span>spotlight</span>
+        </div>
+        <!--sportlight-->
+        <section class="owl-carousel owl-spotlight">
+            {% for article in articles %}
+                {% if article.spotlight %}
+                    {% include 'components/_spotlight.html.twig' %}
+                {% endif %}
+            {% endfor %}
+
+        </section>
+
+        <!--spotlight-thumbs-->
+        <section class="spotlight-thumbs">
+            <div class="row">
+
+                {% for article in articles %}
+                    {% if article.spotlight %}
+                        {% include 'components/_spotlight-thumbs.html.twig' %}
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+        </section>
+    </div>
+    {% include 'components/_sidebar.html.twig' %}
+{% endblock %}

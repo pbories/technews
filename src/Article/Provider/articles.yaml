@@ -1,0 +1,145 @@
+data:
+  article1 :
+    id : 1
+    titre : 'Tip Aligning Digital Marketing with Business Goals and Objectives'
+    contenu : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage : '3.jpg'
+    special : true
+    spotlight : false
+    datecreation : 2017-02-26 09:37:18
+    categorie:
+      id : 2
+      libelle : 'Business'
+    auteur:
+      id : 1
+      prenom : 'Hugo'
+      nom : 'LIEGEARD'
+      email : 'wf3@hl-media.fr'
+  article2 :
+    id: 2
+    titre: 'Pourquoi les gilets jaunes sont marrons'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '2.jpg'
+    special: false
+    spotlight: true
+    datecreation: 2018-03-14 15:07:10
+    categorie:
+      id: 1
+      libelle: 'Politique'
+    auteur:
+      id: 3
+      prenom: 'Pascal'
+      nom: 'BORIES'
+      email: 'dabug@grx.fr'
+  article3 :
+    id: 3
+    titre: 'La Symfony du bonheur'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '6.jpg'
+    special: false
+    spotlight: true
+    datecreation: 2018-08-14 14:01:45
+    categorie:
+      id: 3
+      libelle: 'Sports'
+    auteur:
+      id: 2
+      prenom: 'Henri'
+      nom: 'FAYOT'
+      email: 'riton@sf-forever.fr'
+  article4:
+    id: 4
+    titre: 'Faut-il interdire la neige à Noël ?'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '5.jpg'
+    special: false
+    spotlight: true
+    datecreation: 2016-04-19 19:15:21
+    categorie:
+      id: 1
+      libelle: 'Politique'
+    auteur:
+      id: 4
+      prenom: 'Paul'
+      nom: 'NIOUMANE'
+      email: 'popol@geocities.com'
+  article5:
+    id: 5
+    titre: 'Pourquoi les gilets jaunes sont marrons'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '2.jpg'
+    special: false
+    spotlight: false
+    datecreation: 2018-03-14 15:07:10
+    categorie:
+      id: 1
+      libelle: 'Politique'
+    auteur:
+      id: 3
+      prenom: 'Pascal'
+      nom: 'BORIES'
+      email: 'dabug@grx.fr'
+  article6:
+    id: 6
+    titre: 'Pourquoi les gilets jaunes sont marrons'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '2.jpg'
+    special: false
+    spotlight: false
+    datecreation: 2018-03-14 15:07:10
+    categorie:
+      id: 1
+      libelle: 'Politique'
+    auteur:
+      id: 3
+      prenom: 'Pascal'
+      nom: 'BORIES'
+      email: 'dabug@grx.fr'
+  article7:
+    id: 7
+    titre: 'Pourquoi les gilets jaunes sont marrons'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '2.jpg'
+    special: false
+    spotlight: false
+    datecreation: 2018-03-14 15:07:10
+    categorie:
+      id: 1
+      libelle: 'Politique'
+    auteur:
+      id: 3
+      prenom: 'Pascal'
+      nom: 'BORIES'
+      email: 'dabug@grx.fr'
+  article8:
+    id: 8
+    titre: 'La Symfony du bonheur'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '6.jpg'
+    special: false
+    spotlight: false
+    datecreation: 2018-08-14 14:01:45
+    categorie:
+      id: 3
+      libelle: 'Sports'
+    auteur:
+      id: 2
+      prenom: 'Henri'
+      nom: 'FAYOT'
+      email: 'riton@sf-forever.fr'
+  article9:
+    id: 9
+    titre: 'Faut-il interdire la neige à Noël ?'
+    contenu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit est vitae tempor consectetur. Integer sit amet feugiat leo. Integer lobortis justo tincidunt orci ullamcorper ultrices. Nullam id dolor sit amet tortor tincidunt finibus. Proin aliquet, sem vitae porta consectetur, eros nibh ultricies diam, ac fermentum erat nunc vitae lorem. Cras in massa ullamcorper, luctus enim in, pretium eros. Ut quis rhoncus neque, sit amet sagittis dui.'
+    featuredimage: '5.jpg'
+    special: false
+    spotlight: false
+    datecreation: 2016-04-19 19:15:21
+    categorie:
+      id: 1
+      libelle: 'Politique'
+    auteur:
+      id: 4
+      prenom: 'Paul'
+      nom: 'NIOUMANE'
+      email: 'popol@geocities.com'

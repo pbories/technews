@@ -1,0 +1,16 @@
+index:
+    path: /
+    controller: App\Controller\TechNews\FrontController::index
+
+accueil:
+    path: /accueil
+    controller: FrameworkBundle:Redirect:redirect
+    defaults:
+        route: front
+        permanent: true
+
+mentions_legales:
+    path: /mentions-legales
+    controller: FrameworkBundle:Template:template
+    defaults:
+        template: static/mentionslegales.html.twig
