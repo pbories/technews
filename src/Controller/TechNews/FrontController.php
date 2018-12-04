@@ -81,6 +81,7 @@ class FrontController extends Controller
      * Afficher les articles d'un membre.
      * @Route("/membre/{prenom}_{nom}.html",
      *     name="index_membre",
+     *     defaults={"prenom"="La", "nom"="redaction"},
      *     methods={"GET"},
      *     requirements={"prenom":"\w+", "nom":"\w+"})
      * @param Membre|null $membre

@@ -74,6 +74,15 @@
             "ref": "70062abc2cd58794d2a90274502f81b55cd9951b"
         }
     },
+    "friendsofsymfony/ckeditor-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "8eb1cd0962ded6a6d6e1e5a9b6d3e888f9f94ff6"
+        }
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -128,6 +137,9 @@
             "ref": "f3a28efb32f20b8740fd763651cabd780bce43da"
         }
     },
+    "symfony/contracts": {
+        "version": "v1.0.1"
+    },
     "symfony/debug": {
         "version": "v4.1.8"
     },
@@ -153,6 +165,9 @@
         "version": "v4.1.8"
     },
     "symfony/event-dispatcher": {
+        "version": "v4.1.8"
+    },
+    "symfony/expression-language": {
         "version": "v4.1.8"
     },
     "symfony/filesystem": {
@@ -265,6 +280,9 @@
     },
     "symfony/var-dumper": {
         "version": "v4.1.8"
+    },
+    "symfony/var-exporter": {
+        "version": "v4.2.0"
     },
     "symfony/web-profiler-bundle": {
         "version": "3.3",

@@ -7,6 +7,7 @@ use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Entity\Membre;
 use App\Repository\CategorieRepository;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
@@ -105,9 +106,12 @@ class ArticleController extends Controller
                 'multiple' => false,
                 'label' => false
             ])
-            ->add('contenu', TextareaType::class, [
+            ->add('contenu', CKEditorType::class, [
                 'required' => true,
-                'label' => false
+                'label' => false,
+                'config' => [
+                    'toolbar' => 'standard'
+                ]
             ])
             ->add('featuredImage', FileType::class, [
                 'required' => true,
