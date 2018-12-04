@@ -3,6 +3,7 @@
 namespace App\Controller\TechNews;
 
 
+use App\Controller\HelperTrait;
 use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Entity\Membre;
@@ -16,11 +17,16 @@ use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ArticleController extends Controller
 {
+    use HelperTrait;
+
     /**
      * Démonstration de l'ajout d'un article
      * avec Doctrine.
@@ -79,8 +85,10 @@ class ArticleController extends Controller
      * Formulaire pour ajouter un article.
      * @Route("/creer-un-article",
      *     name="article_new")
+     * @param Request $request
+     * @return Response
      */
-    public function newArticle()
+    public function newArticle(Request $request)
     {
         // Récupération d'un membre
         $membre = $this->getDoctrine()
@@ -92,6 +100,7 @@ class ArticleController extends Controller
         $article->setMembre($membre);
 
         $form = $this->createFormBuilder($article)
+            // Titre de l'article
             ->add('titre', TextType::class, [
                 'required' => true,
                 'label' => "Titre de l'article",
@@ -99,6 +108,7 @@ class ArticleController extends Controller
                     'placeholder' => "Titre de l'article"
                 ]
             ])
+            // Liste déroulante des catégories
             ->add('categorie', EntityType::class, [
                 'class' => Categorie::class,
                 'choice_label' => 'nom',
@@ -106,6 +116,7 @@ class ArticleController extends Controller
                 'multiple' => false,
                 'label' => false
             ])
+            // Saisie de l'article en WYSIWYG
             ->add('contenu', CKEditorType::class, [
                 'required' => true,
                 'label' => false,
@@ -113,6 +124,7 @@ class ArticleController extends Controller
                     'toolbar' => 'standard'
                 ]
             ])
+            // Upload de l'image (drag & drop)
             ->add('featuredImage', FileType::class, [
                 'required' => true,
                 'label' => false,
@@ -120,6 +132,7 @@ class ArticleController extends Controller
                     'class' => 'dropify'
                 ]
             ])
+            // Spécial ou non
             ->add('special', CheckboxType::class, [
                 'required' => false,
                 'attr' => [
@@ -128,6 +141,7 @@ class ArticleController extends Controller
                     'data-off' => 'Non'
                 ]
             ])
+            // Spotlight ou non
             ->add('spotlight', CheckboxType::class, [
                 'required' => false,
                 'attr' => [
@@ -136,12 +150,60 @@ class ArticleController extends Controller
                     'data-off' => 'Non'
                 ]
             ])
+            // Bouton submit
             ->add('submit', SubmitType::class, [
                 'label' => 'Publier mon article'
             ])
-            // catégorie, contenu, featuredimage, special, spotlight
             ->getForm()
         ;
+
+        // Traitement des données POST
+        $form->handleRequest($request);
+
+        // Si le formulaire est soumis et qu'il est valide
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            // dump($article);
+
+            // Traitement de l'upload de l'image
+
+            /** @var UploadedFile $featuredImage */
+            $featuredImage = $article->getFeaturedImage();
+
+            $fileName = $this->slugify($article->getTitre()).'.'.$featuredImage->guessExtension();
+
+            // Déplace l'image dans le dossier où elles sont stockées
+            try {
+                $featuredImage->move(
+                    $this->getParameter('articles_assets_dir'),
+                    $fileName
+                );
+            } catch (FileException $e) {
+                // ... handle exception if something happens during file upload
+            }
+
+            // Mise à jour de l'image
+            $article->setFeaturedImage($fileName);
+
+            // Mise à jour du slug
+            $article->setSlug($this->slugify($article->getTitre()));
+
+            // Sauvegarde en BDD
+            $em= $this->getDoctrine()->getManager();
+            $em->persist($article);
+            $em->flush();
+
+            // Notification
+            $this->addFlash('notice',
+                'Félicitations, votre article est en ligne');
+
+            // Redirection vers l'article créé
+            return $this->redirectToRoute('index_article', [
+                'categorie' => $article->getCategorie()->getSlug(),
+                'slug' => $article->getSlug(),
+                'id' => $article->getId()
+            ]);
+        }
 
         // Affichage du formulaire
         return $this->render('article/form.html.twig', [
