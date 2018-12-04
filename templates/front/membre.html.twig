@@ -1,9 +1,9 @@
 {% extends 'layout.html.twig' %}
 
-{% set active = categorie.slug %}
+{% set active = 'index' %}
 
 {% block page_title %}
-    {{ categorie.nom | title }}
+    {{ 'Articles de '~membre.prenom~' '~membre.nom }}
 {% endblock %}
 
 {% block content %}
@@ -13,7 +13,7 @@
             {%  if articles is not empty %}
 
                 <div class="box-caption">
-                    <span>{{ categorie.nom | title }}</span>
+                    <span>{{ membre.prenom ~' '~ membre.nom }}</span>
                 </div>
                 <!--list-news-cate-->
                 <div class="list-news-cate">
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                         </article>
-                {% endfor %}
+                    {% endfor %}
 
                 </div>
             {%  else %}

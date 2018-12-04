@@ -3,15 +3,17 @@
     <div class="menu-res-inner">
         <ul>
             <li><a href="{{ path('index') }}">ACCUEIL</a></li>
-            <li><a href="{{ path('index_categorie', {
-                    'slug': 'politique'
-                }) }}">POLITIQUE</a></li>
-            <li><a href="{{ path('index_categorie', {
-                    'slug': 'economie'
-                }) }}"> ECONOMIE</a></li>
-            <li><a href="{{ path('index_categorie', {
-                    'slug': 'sports'
-                }) }}">SPORTS</a></li>
+
+            {% for categorie in categories %}
+
+                <li>
+                    <a href="{{ path('index_categorie', {'slug': categorie.slug}) }}">
+                        {{ categorie.nom }}
+                    </a>
+                </li>
+
+            {% endfor %}
+
         </ul>
     </div>
 </nav>
@@ -34,16 +36,20 @@
                 <span>MENU</span>
             </div>
             <ul class="hidden-sm hidden-xs">
-                <li><a href="{{ path('index') }}">ACCUEIL</a></li>
-                <li><a href="{{ path('index_categorie', {
-                        'slug': 'politique'
-                    }) }}">POLITIQUE</a></li>
-                <li><a href="{{ path('index_categorie', {
-                        'slug': 'economie'
-                    }) }}"> ECONOMIE</a></li>
-                <li><a href="{{ path('index_categorie', {
-                        'slug': 'sports'
-                    }) }}">SPORTS</a></li>
+                <li {% if active == 'index' %}class="current"{% endif %}>
+                    <a href="{{ path('index') }}">
+                        ACCUEIL
+                    </a>
+                </li>
+                {% for categorie in categories %}
+
+                    <li {{ active == categorie.slug ? 'class="current"' }}>
+                        <a href="{{ path('index_categorie', {'slug': categorie.slug}) }}">
+                            {{ categorie.nom }}
+                        </a>
+                    </li>
+
+                {% endfor %}
             </ul>
             <div class="search-icon">
                 <div class="search-icon-inner">

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-4  col-sm-4 col-xs-12">
                 <div class="about">
-                    <a href="#" class="logo">
+                    <a href="{{ path('index') }}" class="logo">
                         <img alt="" src="{{ asset('images/logo_footer.png') }}" />
                     </a>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
@@ -15,10 +15,15 @@
             <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
                 <h3>NOS CATEGORIES</h3>
                 <ul class="list-category">
-                    <li><a href="{{ asset('index.html') }}">Accueil</a></li>
-                    <li><a href="{{ asset('business.html') }}">Business</a></li>
-                    <li><a href="{{ asset('computing.html') }}">Computing</a></li>
-                    <li><a href="{{ asset('tech.html') }}">Tech</a></li>=
+
+                    {% for categorie in categories %}
+
+                    <li><a href="{{ path('index_categorie', {
+                            'slug': categorie.slug
+                        }) }}">{{ categorie.nom }}</a>
+                    </li>
+
+                    {% endfor %}=
                 </ul>
             </div>
             <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">

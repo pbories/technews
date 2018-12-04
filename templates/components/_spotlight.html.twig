@@ -2,24 +2,39 @@
     <article class="spotlight-item">
         <div class="spotlight-img">
             <img alt="{{ article.titre }}" src="{{ asset('images/product/') ~article.featuredimage }}" class="img-responsive" />
-            <a href="#" class="cate-tag">{{ article.categorie.libelle }}</a>
+            <a href="{{ path('index_article', {
+                'categorie': article.categorie.slug,
+                'slug': article.slug,
+                'id': article.id
+            }) }}" class="cate-tag">{{ article.categorie.nom }}</a>
         </div>
         <div class="spotlight-item-caption">
             <h2 class="font-heading">
-                <a href="article.html">
+                <a href="{{ path('index_article', {
+                    'categorie': article.categorie.slug,
+                    'slug': article.slug,
+                    'id': article.id
+                }) }}">
                     {{ article.titre }}
                 </a>
             </h2>
             <div class="meta-post">
-                <a href="#">
-                    {{ article.auteur.prenom ~ ' ' ~ article.auteur.nom }}
+                <a href="{{ path('index_membre', {
+                    'prenom': article.membre.prenom,
+                    'nom': article.membre.nom
+                }) }}">
+                    {{ article.membre.prenom ~ ' ' ~ article.membre.nom }}
                 </a>
                 <em></em>
                 <span>
                    {{ article.datecreation | date('d/m/Y') }}
                </span>
             </div>
-            {{ article.contenu | slice(0, 250) }}... <a href="article.html">Lire la suite</a>
+            {{ article.contenu | slice(0, 250) }}... <a href="{{ path('index_article', {
+                'categorie': article.categorie.slug,
+                'slug': article.slug,
+                'id': article.id
+            }) }}">Lire la suite</a>
         </div>
     </article>
 </div>
