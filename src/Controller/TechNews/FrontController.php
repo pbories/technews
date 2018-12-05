@@ -19,7 +19,7 @@ class FrontController extends Controller
     public function index()
     {
         // Récupération des articles depuis le YamlProvider
-        //$articles = $yamlProvider->getArticles();
+        // $articles = $yamlProvider->getArticles();
 
         $repository = $this->getDoctrine()
             ->getRepository(Article::class);
@@ -36,9 +36,8 @@ class FrontController extends Controller
 
     /**
      * Affiche les articles d'une catégorie.
-     * @Route("/categorie/{slug<\w+>}",
+     * @Route("/{slug}",
      *     name="index_categorie",
-     *     defaults={"slug"="politique"},
      *     methods={"GET"},
      *     requirements={"slug":"\w+"})
      * @param $slug
@@ -47,6 +46,7 @@ class FrontController extends Controller
      */
     public function categorie($slug, Categorie $categorie = null)
     {
+
         if (null === $categorie) {
             // On génère une exception :
             //throw $this->createNotFoundException(
@@ -136,6 +136,7 @@ class FrontController extends Controller
                             $categorie,
                             Article $article = null)
     {
+
         //article = $this->getDoctrine()
         //    ->getRepository(Article::class)
         //    ->find($id);

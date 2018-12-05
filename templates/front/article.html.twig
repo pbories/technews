@@ -37,7 +37,7 @@
                 <img alt="{{ article.titre }}"
                      src="{{ asset('images/product/'~article.featuredimage) }}" />
 
-                {{ article.contenu }}
+                {{ article.contenu | raw }}
 
                 <h5 class="text-right font-heading">
                     <strong>

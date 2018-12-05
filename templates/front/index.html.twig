@@ -9,13 +9,19 @@
 
 {% block content %}
 
+    {% for message in app.flashes('notice') %}
+        <div class="alert alert-info">
+            {{ message }}
+        </div>
+    {% endfor %}
+
     <div class="row">
     <!--colleft-->
     <div class="col-md-8 col-sm-12">
         <div class="box-caption">
             <span>spotlight</span>
         </div>
-        <!--sportlight-->
+        <!--spotlight-->
         <section class="owl-carousel owl-spotlight">
             {% for article in articles %}
                 {% if article.spotlight %}
@@ -24,8 +30,6 @@
             {% endfor %}
 
         </section>
-
-        {{ dump(articles) }}
 
         <!--spotlight-thumbs-->
         <section class="spotlight-thumbs">
