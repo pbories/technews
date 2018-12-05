@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d19fed0-88de-4607-bc1a-cea71d57104d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Article/ArticleType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TechNews/MembreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Membre/MembreType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/membre/inscription.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/techNews.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/techNews.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TechNews/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechNews/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TechNews/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechNews/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Membre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Membre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Twig/AppExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Twig/AppExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/_nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_spotlight.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_spotlight.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/categorie.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/categorie.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,15 +73,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/components/_spotlight.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="350">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="e#238#253#0#Twig" expanded="true" />
                 <element signature="e#505#518#0#Twig" expanded="true" />
                 <element signature="e#907#919#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/components/_nav.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+              <folding>
+                <element signature="e#279#294#0#Twig" expanded="true" />
+                <element signature="e#705#710#0#Twig" expanded="true" />
+                <element signature="e#952#970#0#Twig" expanded="true" />
+                <element signature="e#1271#1276#0#Twig" expanded="true" />
+                <element signature="e#1532#1547#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,7 +199,6 @@
         <option value="$PROJECT_DIR$/templates/front/article.html.twig" />
         <option value="$PROJECT_DIR$/src/Article/ArticleType.php" />
         <option value="$PROJECT_DIR$/src/Controller/TechNews/ArticleController.php" />
-        <option value="$PROJECT_DIR$/templates/components/_nav.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Membre/MembreType.php" />
         <option value="$PROJECT_DIR$/templates/membre/inscription.html.twig" />
@@ -214,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/Controller/TechNews/FrontController.php" />
         <option value="$PROJECT_DIR$/templates/front/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/components/_spotlight.html.twig" />
+        <option value="$PROJECT_DIR$/templates/components/_nav.html.twig" />
       </list>
     </option>
   </component>
@@ -429,7 +424,7 @@
       <workItem from="1543827845522" duration="117000" />
       <workItem from="1543827990539" duration="22027000" />
       <workItem from="1543912570143" duration="21333000" />
-      <workItem from="1543999730738" duration="21404000" />
+      <workItem from="1543999730738" duration="21860000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <created>1543508147900</created>
@@ -442,7 +437,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129374000" />
+    <option name="totallyTimeSpent" value="129830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -761,19 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/components/_nav.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="43" selection-start-line="9" selection-start-column="29" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#279#294#0#Twig" expanded="true" />
-            <element signature="e#705#710#0#Twig" expanded="true" />
-            <element signature="e#1271#1276#0#Twig" expanded="true" />
-            <element signature="e#1532#1547#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -826,12 +808,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/components/_spotlight.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="350">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="e#238#253#0#Twig" expanded="true" />
             <element signature="e#505#518#0#Twig" expanded="true" />
             <element signature="e#907#919#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/_nav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding>
+            <element signature="e#279#294#0#Twig" expanded="true" />
+            <element signature="e#705#710#0#Twig" expanded="true" />
+            <element signature="e#952#970#0#Twig" expanded="true" />
+            <element signature="e#1271#1276#0#Twig" expanded="true" />
+            <element signature="e#1532#1547#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
