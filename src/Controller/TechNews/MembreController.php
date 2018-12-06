@@ -47,7 +47,7 @@ class MembreController extends Controller
                 'Félicitations, vous pouvez vous connecter');
 
             // Redirection vers la page de connexion
-            return $this->redirectToRoute('index');
+            return $this->redirectToRoute('security_connexion');
         }
 
         // Affichage du formulaire

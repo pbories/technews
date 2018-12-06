@@ -8,8 +8,11 @@ use App\Controller\HelperTrait;
 use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Entity\Membre;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Asset\Packages;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
+use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -75,21 +78,22 @@ class ArticleController extends Controller
 
     /**
      * Formulaire pour ajouter un article.
-     * @Route("/creer-un-article",
+     * @Route("/rediger-un-article.html",
      *     name="article_new")
+     * @Security("has_role('ROLE_AUTEUR')")
      * @param Request $request
      * @return Response
      */
     public function newArticle(Request $request)
     {
         // Récupération d'un membre
-        $membre = $this->getDoctrine()
-            ->getRepository(Membre::class)
-            ->find(2)
-        ;
+        // $membre = $this->getDoctrine()
+        //     ->getRepository(Membre::class)
+        //     ->find(2)
+        // ;
 
         $article = new Article();
-        $article->setMembre($membre);
+        $article->setMembre($this->getUser());
 
         $form = $this->createForm(ArticleType::class, $article)
             ->handleRequest($request);
@@ -138,6 +142,38 @@ class ArticleController extends Controller
                 'id' => $article->getId()
             ]);
         }
+
+        // Affichage du formulaire
+        return $this->render('article/form.html.twig', [
+            'form' => $form->createView()
+        ]);
+    }
+
+    /**
+     * Formulaire pour modifier un article.
+     * @Route("/modifier/{slug<[a-zA-Z1-9\-_\/]+>}_{id<\d+>}.html",
+     *     name="article_edit")
+     * @Security("has_role('ROLE_AUTEUR')")
+     * @param Request $request
+     * @param Packages $packages
+     * @param Article|null $article
+     * @return Response
+     */
+    public function editArticle(Request $request,
+                                Packages $packages,
+                                Article $article = null)
+    {
+        $options = [
+            'image_url' => $packages->getUrl('images/product/' . $article->getFeaturedImage())
+        ];
+
+        $article->setFeaturedImage(
+            new File($this->getParameter('articles_assets_dir')
+                .'/'.$article->getFeaturedImage())
+        );
+
+        $form = $this->createForm(ArticleType::class, $article, $options)
+            ->handleRequest($request);
 
         // Affichage du formulaire
         return $this->render('article/form.html.twig', [

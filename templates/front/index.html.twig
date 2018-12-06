@@ -9,6 +9,8 @@
 
 {% block content %}
 
+{# {{ dump(app.user) }} #}
+
     {% for message in app.flashes('notice') %}
         <div class="alert alert-info">
             {{ message }}

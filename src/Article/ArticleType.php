@@ -19,7 +19,7 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            // Champt titre
+            // Champ titre
             ->add('titre', TextType::class, [
                 'required' => true,
                 'label' => "Titre de l'article",
@@ -48,7 +48,8 @@ class ArticleType extends AbstractType
                 'required' => true,
                 'label' => false,
                 'attr' => [
-                    'class' => 'dropify'
+                    'class' => 'dropify',
+                    'data-default-file' => $options['image_url']
                 ]
             ])
             // Spécial ou non
@@ -79,7 +80,8 @@ class ArticleType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Article::class
+            'data_class' => Article::class,
+            'image_url' => null
         ]);
     }
 

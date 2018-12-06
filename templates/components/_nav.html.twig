@@ -27,9 +27,6 @@
                         <img alt="Logo" src="{{ asset('images/logo.png') }}" />
                     </a>
                 </div>
-                <div class="col-md-3 col-md-offset-6">
-                    <a href="{{ path('membre_inscription') }}">Inscription</a>
-                </div>
             </div>
         </header>
         <!--menu-->
@@ -53,6 +50,24 @@
                     </li>
 
                 {% endfor %}
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <li {{ active == 'deconnexion' ? 'class="current"' }}>
+                        <a href="{{ path('security_deconnexion') }}">
+                            Déconnexion
+                        </a>
+                    </li>
+                {% else %}
+                    <li {{ active == 'incription' ? 'class="current"' }}>
+                        <a href="{{ path('membre_inscription') }}">
+                            Inscription
+                        </a>
+                    </li>
+                    <li {{ active == 'connexion' ? 'class="current"' }}>
+                        <a href="{{ path('security_connexion') }}">
+                            Connexion
+                        </a>
+                    </li>
+                {% endif %}
             </ul>
             <div class="search-icon">
                 <div class="search-icon-inner">
