@@ -40,7 +40,6 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Assert\NotNull(message="Vous devez ajouter une image")
      * @Assert\Image(
      *     mimeTypesMessage="Vérifiez le format de votre image.",
      *     maxSize="2M", maxSizeMessage="Votre image ne doit pas peser plus de 2 Mo."
@@ -205,5 +204,15 @@ class Article
     public function setMembre($membre): void
     {
         $this->membre = $membre;
+    }
+
+    /**
+     * Vérifier qu'un membre est bien auteur de l'article.
+     * @param Membre|null $membre
+     * @return bool
+     */
+    public function isAuteur(?Membre $membre = null) : bool
+    {
+        return $membre && $this->getMembre()->getId() === $membre->getId();
     }
 }

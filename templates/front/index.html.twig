@@ -38,9 +38,7 @@
             <div class="row">
 
                 {% for article in articles %}
-                    {% if article.spotlight %}
-                        {% include 'components/_spotlight-thumbs.html.twig' %}
-                    {% endif %}
+                    {% include 'components/_spotlight-thumbs.html.twig' %}
                 {% endfor %}
 
             </div>

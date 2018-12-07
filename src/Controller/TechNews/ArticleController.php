@@ -9,7 +9,7 @@ use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Entity\Membre;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Asset\Packages;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\File;
@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ArticleController extends Controller
+class ArticleController extends AbstractController
 {
     use HelperTrait;
 
@@ -153,31 +153,90 @@ class ArticleController extends Controller
      * Formulaire pour modifier un article.
      * @Route("/modifier/{slug<[a-zA-Z1-9\-_\/]+>}_{id<\d+>}.html",
      *     name="article_edit")
-     * @Security("has_role('ROLE_AUTEUR')")
+     * @Security("article.isAuteur(user)")
      * @param Request $request
      * @param Packages $packages
-     * @param Article|null $article
+     * @param Article $article
      * @return Response
      */
-    public function editArticle(Request $request,
-                                Packages $packages,
-                                Article $article = null)
+    public function editArticle(Article $article,
+                                Request $request,
+                                Packages $packages)
     {
+
+        # On passe à notre formulaire l'URL de la featuredImage
         $options = [
-            'image_url' => $packages->getUrl('images/product/' . $article->getFeaturedImage())
+            'image_url' => $packages->getUrl('images/product/'
+                . $article->getFeaturedImage())
         ];
 
+        # Récupération de l'image
+        $featuredImageName = $article->getFeaturedImage();
+
+        # Notre formulaire attend une instance de File pour l'edition
+        # de la featuredImage
         $article->setFeaturedImage(
             new File($this->getParameter('articles_assets_dir')
-                .'/'.$article->getFeaturedImage())
+                . '/' . $featuredImageName)
         );
 
+        # Création / Récupération du Formulaire
         $form = $this->createForm(ArticleType::class, $article, $options)
             ->handleRequest($request);
 
-        // Affichage du formulaire
+        # Si le formulaire est soumis et qu'il est valide
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            #dump($article);
+            # 1. Traitement de l'upload de l'image
+
+            /** @var UploadedFile $featuredImage */
+            $featuredImage = $article->getFeaturedImage();
+
+            if (null !== $featuredImage) {
+
+                $fileName = $this->slugify($article->getTitre())
+                    . '.' . $featuredImage->guessExtension();
+
+                try {
+                    $featuredImage->move(
+                        $this->getParameter('articles_assets_dir'),
+                        $fileName
+                    );
+                } catch (FileException $e) {
+
+                }
+
+                # Mise à jour de l'image
+                $article->setFeaturedImage($fileName);
+
+            } else {
+                $article->setFeaturedImage($featuredImageName);
+            }
+
+            # 2. Mise à jour du Slug
+            $article->setSlug($this->slugify($article->getTitre()));
+
+            # 3. Sauvegarde en BDD
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($article);
+            $em->flush();
+
+            # 4. Notification
+            $this->addFlash('notice',
+                'Félicitations, votre article est en ligne !');
+
+            # 5. Redirection vers l'article créé
+            return $this->redirectToRoute('article_edit', [
+                'id' => $article->getId(),
+                'slug' => $article->getSlug()
+            ]);
+
+        }
+
+        # Affichage du Formulaire
         return $this->render('article/form.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 }

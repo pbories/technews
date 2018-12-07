@@ -7,11 +7,11 @@ use App\Article\Provider\YamlProvider;
 use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Entity\Membre;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class FrontController extends Controller
+class FrontController extends AbstractController
 {
     /**
      * Page d'acceuil de notre site internet
@@ -175,8 +175,10 @@ class FrontController extends Controller
 
     /**
      * Gérer l'affichage de la sidebar
+     * @param Article|null $article
+     * @return Response
      */
-    public function sidebar()
+    public function sidebar(?Article $article = null)
     {
         // Récupération du Repository
         $repository = $this->getDoctrine()
@@ -190,7 +192,8 @@ class FrontController extends Controller
 
         return $this->render('components/_sidebar.html.twig', [
             'articles' => $articles,
-            'specials' => $specials
+            'specials' => $specials,
+            'article' => $article
         ]);
     }
 }
