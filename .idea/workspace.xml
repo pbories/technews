@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d19fed0-88de-4607-bc1a-cea71d57104d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/newsletter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TechNews/NewsletterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Membre/MembreLoginSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Newsletter/NewsletterSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Newsletter/NewsletterType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/newsletter/_modal.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TechNews/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechNews/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TechNews/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechNews/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Membre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Membre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Twig/AppExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Twig/AppExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_sidebar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_sidebar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="6d19fed0-88de-4607-bc1a-cea71d57104d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -526,7 +507,7 @@
       <workItem from="1543999730738" duration="21893000" />
       <workItem from="1544085629128" duration="10039000" />
       <workItem from="1544096995328" duration="13530000" />
-      <workItem from="1544173183743" duration="22542000" />
+      <workItem from="1544173183743" duration="22944000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <created>1543508147900</created>
@@ -539,11 +520,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175974000" />
+    <option name="totallyTimeSpent" value="176376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
